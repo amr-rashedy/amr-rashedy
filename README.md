@@ -12,3 +12,9 @@ You can click the Preview link to take a look at your changes.
 composer create-project laravel/laravel projectname "6.*"
 //project run
 php artisan serve
+//route parameter must
+rout::get('/pagename/{id}', function ($id) {
+return $id;});
+//route parameter optional
+rout::get('/pagename/{id?}', function ($id) {
+return $id;});
